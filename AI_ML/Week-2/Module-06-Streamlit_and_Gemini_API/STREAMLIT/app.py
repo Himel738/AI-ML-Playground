@@ -13,5 +13,11 @@ response = client.models.generate_content(
 )
 
 print(response.text)
-
 st.markdown(response.text)
+
+st.divider()
+
+st.title(f"Response from API Depends on User Input:", anchor = False)
+user_input = st.text_input("Enter your input here:")
+
+
