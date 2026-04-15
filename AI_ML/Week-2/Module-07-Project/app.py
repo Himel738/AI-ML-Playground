@@ -47,7 +47,7 @@ if pressed:
         #Audio
         with st.container(border=True):
             st.subheader("Audio Transcription")
-            with st.spinner("Generating Note Summary..."):
+            with st.spinner("Generating Audio of Summary..."):
                 generated_note = generated_note.replace("#", "").replace("*", "").replace("-", "")
                 audio_transcript = audio_transcription(generated_note)
                 st.audio(audio_transcript)
@@ -58,4 +58,3 @@ if pressed:
             with st.spinner("Generating Quizes..."):
                 quizes = quiz_generator(pil_images,selected_option)
                 st.markdown(quizes)
-
