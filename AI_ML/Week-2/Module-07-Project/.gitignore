@@ -1,3 +1,5 @@
 .env
 __pycache__/
 project1venv/
+working_image.py
+working_with_audio.py
