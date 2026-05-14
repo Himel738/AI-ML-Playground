@@ -18,7 +18,7 @@ def shortest_job_first_preemptive(df):
                     min_remaining = remaining_burst_time[i]
                     next_process = i
         
-        # If no process has arrived, move time to next arrival
+        # if no process has arrived, move time to next arrival
         if next_process == -1:
             for i in range(len(df)):
                 if remaining_burst_time[i] > 0:
